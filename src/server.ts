@@ -23,7 +23,7 @@ const start = async () => {
   });
 
   // Add your own express routes here
-  app.use("/api/ai", authMiddleware, aiRoutes);
+  app.use("/ai", authMiddleware, aiRoutes);
 
   app.use(errorMiddleware);
 
